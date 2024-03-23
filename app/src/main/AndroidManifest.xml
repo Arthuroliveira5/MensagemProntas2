@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcherbd1"
+        android:label="Bom dia tarde noiteexp"
+        android:roundIcon="@mipmap/ic_launcherbd1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.novozap.userd.mensagenspronta.Telainicial10"></activity>
+        <activity android:name="com.novozap.userd.mensagenspronta.TelaInicial3" />
+        <activity android:name="com.novozap.userd.mensagenspronta.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.novozap.userd.mensagenspronta.PostsListActivity" />
+        <activity android:name="com.novozap.userd.mensagenspronta.PostDetailActivity" />
+        <activity android:name="com.novozap.userd.mensagenspronta.PostsListActivity2" />
+        <activity android:name="com.novozap.userd.mensagenspronta.PostsListActivity3" />
+        <activity android:name="com.novozap.userd.mensagenspronta.PostsListActivity4" />
+        <activity android:name="com.novozap.userd.mensagenspronta.PostsListActivity5" />
+        <activity android:name="com.novozap.userd.mensagenspronta.activity.ListaDeCursosActivity" />
+        <activity android:name="com.novozap.userd.mensagenspronta.activity.Telainicial20" />
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="wUEWeakVn3nQMTXP5QqFrfkNgWuIqso6vamEVm9aqDd3t9SGML5NTw6qit6EMXWGBOXx_1T2vnCPnDgae3vRVE" />
+
+    </application>
+
+
+
+</manifest>

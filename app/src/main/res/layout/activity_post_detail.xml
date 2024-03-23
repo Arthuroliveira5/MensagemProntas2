@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    app:cardBackgroundColor="#4AA84327"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true"
+
+
+
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingClass">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleTv"
+                android:textColor="#000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+
+                />
+
+
+
+            <ImageView
+
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:background="@drawable/loadingimage"
+
+
+                />
+
+            <TextView
+
+                android:id="@+id/descriptionTv"
+                android:text="A mensagem do post aparece aqui"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/saveBtn"
+                    style="@style/Base.Widget.AppCompat.Button.Colored"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/pink"
+                    android:drawableLeft="@drawable/ic_action_save"
+                    android:text="Save" />
+
+                <Button
+                    android:id="@+id/shareBtn"
+                    style="@style/Base.Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/deeppurple"
+                    android:drawableLeft="@drawable/ic_action_share"
+                    android:text="Compartilhar" />
+
+                <Button
+                    android:id="@+id/wallBtn"
+                    style="@style/Base.Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/pink"
+                    android:drawableLeft="@drawable/ic_action_wall"
+                    android:text="Wallpaper" />
+
+
+
+            </LinearLayout>
+
+            <com.startapp.android.publish.ads.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wallBtn"
+                android:layout_centerHorizontal="true" />
+
+            <!-- TODO: 09/01/2019 Mrec Banner -->
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</android.support.v7.widget.CardView>
